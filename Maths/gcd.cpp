@@ -21,7 +21,7 @@ public:
             if(n1>n2) n1=n1%n2;
             else n2=n2%n1;
         }
-        if(a==b) return b;
+        if(a==0) return b;
         else return a;
     }
 };
