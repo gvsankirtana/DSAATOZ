@@ -15,3 +15,14 @@ bool ispal(int i,string s,int n){
         return ispal(0,s,n);
     }
 };
+
+//optimised solution
+ int i = 0, j = (int)s.size() - 1;
+        while (i < j) {
+            char a = s[i], b = s[j];
+            if (!isalnum((unsigned char)a)) { i++; continue; }
+            if (!isalnum((unsigned char)b)) { j--; continue; }
+            if (tolower(a) != tolower(b)) return false;
+            i++; j--;
+        }
+        return true;
