@@ -16,7 +16,7 @@ bool ispal(int i,string s,int n){
     }
 };
 
-//optimised solution
+//optimised solution O(n)
  int i = 0, j = (int)s.size() - 1;
         while (i < j) {
             char a = s[i], b = s[j];
